@@ -1,0 +1,41 @@
+<section class="relative md:py-24 py-16 mt-20 bg-[url('/assets/images/bg/bg2.png')] bg-center bg-no-repeat bg-cover">
+<div class="container">
+  <h1>Корзина</h1>
+  <div class="cart-content">
+    <div class="cart-items">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Продукт</th>
+            <th>Ціна</th>
+            <th>Кількість</th>
+            <th>Разом</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product-details">
+              <img src="../../../assets/images/drone/drone_5.png">
+              <span> 'item.name'</span>
+            </td>
+            <td>item.price</td>
+            <td>
+              <input type="number"  min="1">
+            </td>
+            <td>item.price * item.quantity  </td>
+            <td><button> removeItem × </button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="cart-summary">
+      <div class="totals">
+        <h3>Разом</h3>
+        <p>Total: <span> totalPrice </span></p>
+        <a href="" class="h-10 px-6 mt-10 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Відправити замовлення <i class="mdi mdi-chevron-right align-middle ms-0.5"></i></a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>

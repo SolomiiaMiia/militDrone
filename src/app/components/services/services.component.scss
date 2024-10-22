@@ -1,0 +1,8 @@
+.group{
+    height: 350px !important;
+}
+@media screen and (max-width: 450px) {
+    .group{
+        height: 430px !important;
+    }
+}
