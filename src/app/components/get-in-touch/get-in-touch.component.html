@@ -1,15 +1,23 @@
-<section class="relative lg:py-24 py-16 bg-slate-50 dark:bg-slate-900 bg-center bg-no-repeat bg-cover"  id="contact">
+<section class="relative lg:py-24 py-16 bg-slate-50 dark:bg-slate-900 bg-center bg-no-repeat bg-cover" id="contact">
     <div class="container relative">
         <div class="grid grid-cols-1 pb-6 text-center">
             <h3 class="font-semibold text-2xl leading-normal mb-4">Зв'яжіться з нами</h3>
-
             <p class="text-slate-400 max-w-xl mx-auto">Залиште заявку і ми зв’яжемося з вами через 5 хвилин.</p>
-        </div><!--end grid-->
+        </div>
+        <!--end grid-->
 
         <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6">
+            <!-- Відео -->
             <div class="lg:col-span-7 md:col-span-6">
-                <img src="assets/images/drone0.webp" alt="">
+                <div class="video-wrapper relative w-full overflow-hidden rounded-md shadow-md dark:shadow-gray-700">
+                    <iframe class="w-full h-64 sm:h-80 lg:h-[400px] rounded-md" src="https://www.youtube.com/embed/zWXWfjEdrqg" 
+                        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
+
+            <!-- Форма -->
             <div class="lg:col-span-5 md:col-span-6">
                 <div class="lg:ms-5">
                     <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-600 p-6">
@@ -22,7 +30,7 @@
                                     <label for="name" class="font-semibold">Ваше Ім'я:</label>
                                     <input name="name" id="name" type="text" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-800 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Ім'я :">
                                 </div>
-        
+
                                 <!-- Поле для номера телефону -->
                                 <div class="col-span-1">
                                     <label for="phNumber" class="font-semibold">Ваш номер телефону:</label>
@@ -35,5 +43,6 @@
                 </div>
             </div>
         </div>
-    </div><!--end container-->
+    </div>
+    <!--end container-->
 </section>

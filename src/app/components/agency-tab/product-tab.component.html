@@ -1,251 +1,126 @@
 <section class="realtive md:py-24 py-16" id="services2">
-    <div class="container relative">
-        <div class="grid grid-cols-1 pb-6 text-center">
-            <h3 class="font-semibold text-2xl leading-normal mb-4">Наші продукти</h3>
-            <p class="text-slate-400 max-w-xl mx-auto">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+  <div class="container relative">
+    <div class="grid grid-cols-1 pb-6 text-center">
+      <h3 class="font-semibold text-2xl leading-normal mb-4">Наші продукти</h3>
+      <!-- <p class="text-slate-400 max-w-xl mx-auto">Система керування на оптоволокні</p> -->
+    </div>
+
+    <div class="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6 text-center justify-center">
+      <div class="lg:col-span-4 md:col-span-5">
+        <div class="sticky top-20">
+          <!-- Сітка з однією колонкою -->
+          <ul class="grid grid-cols-1 gap-6 p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
+            <li role="presentation">
+              <button
+                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
+                [ngClass]="activeIndex === 1 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
+                (click)="tabClick(1)">
+                <span class="block">Система керування на оптоволокні</span>
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
+                [ngClass]="activeIndex === 2 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
+                (click)="tabClick(2)">
+                <span class="block">FPV дрон 10inc</span>
+                <!-- <span class="text-lg mt-2 block">300M-6GHz</span> -->
+              </button>
+            </li>
+            <li role="presentation">
+              <button
+                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
+                [ngClass]="activeIndex === 3 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
+                (click)="tabClick(3)">
+                <span class="block">FPV дрон 13’ дюймів</span>
+                <!-- <span class="text-lg mt-2 block">4-смуговий засіб 200W GaN 433M-5.8Ghz</span> -->
+              </button>
+            </li>
+            <!-- <li role="presentation">
+              <button
+                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
+                [ngClass]="activeIndex === 4 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
+                (click)="tabClick(4)">
+                <span class="block">Цифровий модуляційний підсилювач</span>
+                <span class="text-lg mt-2 block">100W Anti FPV 700-1000Mhz LDMOS</span>
+              </button>
+            </li> -->
+            
+          </ul>
         </div>
+      </div>
 
-        <div class="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6">
-            <div class="lg:col-span-6 md:col-span-7">
-                <div class="sticky top-20">
-                    <!-- Створюємо сітку на дві ширші колонки -->
-                    <ul class="grid grid-cols-2 gap-6 p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md" style="grid-template-columns: repeat(2, minmax(200px, 1fr));">
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 1 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''" 
-                                    (click)="tabClick(1)">
-                                <span class="block">Ручний детектор безпілотників</span>
-                                <span class="text-lg mt-2 block"> від 800 МГц до 5,8 ГГц</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 2 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''" 
-                                    (click)="tabClick(2)">
-                                <span class="block"> Ручна портативна повнодіапазонна антена</span>
-                                <span class="text-lg mt-2 block"> 300M-6GHz</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 3 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''" 
-                                    (click)="tabClick(3)">
-                                <span class="block">Портативна система протидії безпілотникам</span>
-                                <span class="text-lg mt-2 block">4-смуговий засіб 200W GaN 433M-5.8Ghz</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 4 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''" 
-                                    (click)="tabClick(4)">
-                                <span class="block">Цифровий модуляційний підсилювач</span>
-                                <span class="text-lg mt-2 block">100W Anti FPV 700-1000Mhz LDMOS</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 5 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''" 
-                                    (click)="tabClick(5)">
-                                <span class="block"> Цифровий модуляційний підсилювач</span>
-                                <span class="text-lg mt-2 block">50W Anti FPV 700-1000Mhz LDMOS</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 6 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''" 
-                                    (click)="tabClick(6)">
-                                <span class="block">Модуль захисту від безпілотників</span>
-                                <span class="text-lg mt-2 block">5,2 ГГц 50 Вт</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teал-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 7 ? 'text-white bg-teал-500 hover:text-white dark:hover:text-white hover:bg-teал-500 dark:hover:bg-teал-500' : ''" 
-                                    (click)="tabClick(7)">
-                                <span class="block">Дронщит</span>
-                                <span class="text-lg mt-2 block"> 6 каналів 180-220 Вт Анти-БПЛА GPS L1 L2 2.4G 5.8G</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teал-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 8 ? 'text-white bg-teал-500 hover:text-white dark:hover:text-white hover:bg-teал-500 dark:hover:bg-teал-500' : ''" 
-                                    (click)="tabClick(8)">
-                                <span class="block">Рюкзак для захисту від безпілотників</span>
-                                <span class="text-lg mt-2 block">6 каналів 30 Вт/50 Вт на смугу GPS L1 L2 2.4G 5.8G</span>
-                            </button>
-                        </li>
-                        <li role="presentation">
-                            <button class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teал-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 9 ? 'text-white bg-teал-500 hover:text-white dark:hover:text-white hover:bg-teал-500 dark:hover:bg-teал-500' : ''" 
-                                    (click)="tabClick(9)">
-                                <span class="block">Ручний детектор безпілотників</span>
-                                <span class="text-lg mt-2 block"> з антеною DF</span>
-                            </button>
-                        </li> 
-                        <li role="presentation">
-                            <button class="px-3 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teал-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800" 
-                                    [ngClass]="activeIndex === 10 ? 'text-white bg-teал-500 hover:text-white dark:hover:text-white hover:bg-teал-500 dark:hover:bg-teал-500' : ''" 
-                                    (click)="tabClick(10)">
-                                <span class="block">Ручна система придушення лічильника безпілотників</span>
-                                <span class="text-lg mt-2 block">700-1000МГц + 2.4ГГц Р</span>
-                            </button>
-                        </li>
-                    </ul>
-                </div>
+
+      <div class="lg:col-span-7 md:col-span-5">
+        <div id="myTabContent" class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md"
+          style="text-align: left;">
+          <div [ngClass]="activeIndex === 1 ? '' : 'hidden'">
+            <img src="assets/images/drone/IMG_6498.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
+            <div class="mt-6">
+              <!-- <h5 class="text-lg font-medium">SEO Audit</h5> -->
+              <p class="text-slate-400 mt-4">
+                Система керування на оптоволокні </p>
+              <br>
+              Наземна станція: <br>
+              4170 UAH <br>
+              Довжина 10 км: 17 420 UAH <br>
+              Довжина 15 км:
+              21 980 UAH
+              <div class="mt-4">
+                <a href="/more-info/detector_bpla" class="text-teal-500">Більше <i
+                    class="mdi mdi-chevron-right align-middle"></i></a>
+              </div>
             </div>
-   
-
-            <div class="lg:col-span-6 md:col-span-7">
-                <div id="myTabContent" class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-                    <div [ngClass]="activeIndex === 1 ? '' : 'hidden'">
-                        <img src="assets/images/drone/RR1-transformed copy 2.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-                        <div class="mt-6">
-                            <!-- <h5 class="text-lg font-medium">SEO Audit</h5> -->
-                            <p class="text-slate-400 mt-4">
-                                Ручний детектор безпілотників від 800 МГц до 5,8 ГГц. Водонепроникна портативна
-                                система виявлення FPV з точним визначенням ідентичності.<br>
-                                Артикул: 00468 <br>
-                                Ручний пристрій виявлення - це обладнання для виявлення безпілотних літальних
-                                апаратів (БПЛА) великої дальності, що використовує зовнішню надширокосмугову
-                                антену. Він досягає надзвичайно високої точності виявлення навіть у складних
-                                електромагнітних умовах.</p>
-                            <div class="mt-4">
-                                <a href="/more-info/detector_bpla" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div [ngClass]="activeIndex === 2 ? '' : 'hidden'">
-                        <img src="assets/images/drone/topaz1-upscale-4x.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">
-                                Ручна портативна повнодіапазонна антена 300M-6GHz для виявлення безпілотних
-                                літальних апаратів безпілотних літальних апаратів надширокої повнодіапазонної
-                                антени ідентифікує DJI. <br>
-                                Артикул: 00447 <br>
-                                Використовується для співпраці з портативним пригнічувачем безпілотників, щоб
-                                компенсувати проблему, що безпілотник не був вчасно знайдений в роботі;
-                                Вперше знайти навколишній дрон, висока чутливість до тривоги, невеликий розмір,
-                                хороший захист.
-                                
-                            </p>
-                            <div class="mt-4">
-                                <a href="/more-info/antena" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div [ngClass]="activeIndex === 3 ? '' : 'hidden'">
-                        <img src="assets/images/drone/enhanced.watermark.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">4-смуговий засіб 200W GaN 433M-5.8Ghz з індивідуальними частотами. Портативна
-                                система протидії безпілотникам. Лічильник придушення FPV проти безпілотників. <br>
-                                Артикул: 00432
-                                </p>
-                            <div class="mt-4">
-                                <a href="/more-info/sustema_protudii_bpla" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div [ngClass]="activeIndex === 4 ? '' : 'hidden'">
-                        <img src="assets/images/drone/100WDigitalmodulation.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">100W Anti FPV 700-1000Mhz LDMOS Цифровий модуляційний підсилювач потужності
-                               Lora модуль <br>
-                                Артикул: 00411 <br>
-                                Підтримка індивідуального діапазону частот та потужності</p>
-                            <div class="mt-4">
-                                <a href="/more-info/pidsulyvash_potyshnosti100W" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div [ngClass]="activeIndex === 5 ? '' : 'hidden'">
-                        <img src="assets/images/drone/100WDigitalmodulation.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">50W Anti FPV 700-1000Mhz LDMOS Цифровий модуляційний підсилювач потужності
-                                 Lora модуль <br>
-                                Артикул: 00403 <br>
-                                Підтримка індивідуального діапазону частот та потужності</p>
-                            <div class="mt-4">
-                                <a href="/more-info/pidsulyvash_potyshnosti50W" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div [ngClass]="activeIndex === 6 ? '' : 'hidden'">
-                        <img src="assets/images/drone/100WDigitalmodulation.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">5,2 ГГц 50 Вт модуль захисту від безпілотників, модуль gan, система захисту від
-                                безпілотників, захист від безпілотників, пригнічувач fpv <br>
-                                Артикул: 00384 <br>
-                                5.8GHz анти-дрон модуль 50W <br>
-                                Підтримка потужності та частоти</p>
-                            <div class="mt-4">
-                                <a href="/more-info/modul_zahusty_vid_bpla" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div [ngClass]="activeIndex === 7 ? '' : 'hidden'">
-                        <img src="assets/images/drone/AntiUAVGPS.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">Дронщит 6 каналів 180-220 Вт Анти-БПЛА GPS L1 L2 2.4G 5.8G контр-дрон дронщит <br>
-                                Autel Mavic система захисту Gan глушник <br>
-                                Артикул: 00375 <br>
-                                6 каналів 180-200w droneshield Анти UAV GPS L1 L2 2.4G 5.8G лічильник fpv дрон
-                                sheild autel mavic глушіння. Система захисту Gan пригнічувач перешкод.</p>
-                            <div class="mt-4">
-                                <a href="/more-info/dronshut" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                      <div [ngClass]="activeIndex === 8 ? '' : 'hidden'">
-                        <img src="assets/images/drone/transformed.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">6 каналів 30 Вт/50 Вт на смугу Рюкзак анти-безпілотник GPS L1 L2 2.4G 5.8G лічильник <br>
-                                fpv дрон autel mavic глушіння Система захисту Gan пригнічувач перешкод <br>
-                                Артикул: 00374</p>
-                            <div class="mt-4">
-                                <a href="/more-info/rykzak_zahusty" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                       <div [ngClass]="activeIndex === 9 ? '' : 'hidden'">
-                        <img src="assets/images/drone/a_fpv32.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">Націлений на DJI для точної ідентифікації
-                                та визначення місцезнаходження для системи протидії безпілотникам. <br>
-                                Артикул: TTSKW03-1 <br>
-                                Це високоточний інтегрований пристрій для виявлення та позиціонування
-                                безпілотників. Система розроблена на основі технології аналізу протоколів на рівні
-                                повідомлень CRPC+.
-                            </p>
-                            <div class="mt-4">
-                                <a href="/more-info/ryshnuy_detector" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div [ngClass]="activeIndex === 10 ? '' : 'hidden'">
-                        <img src="assets/images/drone/pr_FPV.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-                        <div class="mt-6">
-                            <p class="text-slate-400 mt-4">700-1000МГц + 2.4ГГц Ручна система придушення лічильника безпілотників для
-                                боротьби з FPV безпілотниками пригнічувач захисту від FPV <br>
-                                Артикул: 00472 <br>
-                                Тип: одночастотний ручний / двочастотний ручний пригнічувач <br>
-                                Частота: підтримує різні налаштування частоти <br>
-                                Потужність: 30 Вт, 50 Вт</p>
-                            <div class="mt-4">
-                                <a href="/more-info/pryhnuvach_FPV" class="text-teal-500">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+          </div>
+          <div [ngClass]="activeIndex === 2 ? '' : 'hidden'">
+            <img src="assets/images/drone/IMG_6500.png" class="shadow dark:shadow-gray-700 rounded-md img-h"
+              alt="">
+            <div class="mt-6">
+              <p class="text-slate-400 mt-4">
+                Десятидюймовий дрон створений для системи керування на 10 км
+                <br>
+              </p>
+              Ціна:
+              16 000 UAH
+              <div class="mt-4">
+                <a href="/more-info/antena" class="text-teal-500">Більше <i
+                    class="mdi mdi-chevron-right align-middle"></i></a>
+              </div>
             </div>
-        </div><!--end grid-->
-    </div><!--end container-->
+          </div>
+          <div [ngClass]="activeIndex === 3 ? '' : 'hidden'">
+            <img src="assets/images/drone/IMG_6502.png" class="shadow dark:shadow-gray-700 rounded-md img-h"
+              alt="">
+            <div class="mt-6">
+              <p class="text-slate-400 mt-4">13-тидюймовий дрон створений для системи керування на 15 км
+                <br>
+              </p>
+              Ціна: 31 900 UAH
+              <div class="mt-4">
+                <a href="/more-info/sustema_protudii_bpla" class="text-teal-500">Більше <i
+                    class="mdi mdi-chevron-right align-middle"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- <div [ngClass]="activeIndex === 4 ? '' : 'hidden'">
+            <img src="assets/images/drone/100WDigitalmodulation.png"
+              class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
+            <div class="mt-6">
+              <p class="text-slate-400 mt-4">100W Anti FPV 700-1000Mhz LDMOS Цифровий модуляційний підсилювач потужності
+                Lora модуль <br>
+                Артикул: 00411 <br>
+                Підтримка індивідуального діапазону частот та потужності</p>
+              <div class="mt-4">
+                <a href="/more-info/pidsulyvash_potyshnosti100W" class="text-teal-500">Більше <i
+                    class="mdi mdi-chevron-right align-middle"></i></a>
+              </div>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+    <!--end grid-->
+  </div>
+  <!--end container-->
 </section>

@@ -1,38 +1,42 @@
 <section class="relative md:py-24 py-16 mt-10 bg-[url('/assets/images/bg/bg2.png')] bg-center bg-no-repeat bg-cover">
   <div class="container">
     <div class="d-flex flex-col text-center items-center">
-      <h1 class="font-semibold text-4xl leading-normal mb-8 text-slate-400 mt-4 text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">{{drone.DroneName}}</h1>
+      <h1
+        class="font-semibold text-4xl leading-normal mb-8 text-slate-400 mt-4 text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+        {{drone.DroneName}}</h1>
 
       <div class="card bg-transparent w-full max-w-md md:max-w-lg lg:max-w-xl">
         <div id="carouselExampleIndicators" class="carousel slide">
-          <div class="carousel-indicators">
+          <!-- <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+          </div> -->
           <div class="carousel-inner">
             <div [ngClass]="{ 'active': i==0 }" class="carousel-item" *ngFor="let image of drone.ImgDrones; index as i">
               <img src="../../../assets/images/drone/{{image}}" class="d-block w-100" alt="...">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
-          </button>
+          </button> -->
         </div>
       </div>
 
-      <div class="font-semibold text-2xl leading-normal mb-4 mt-10 text-center text-xl sm:text-xl md:text-2xl lg:text-3xl">
+      <div
+        class="font-semibold text-2xl leading-normal mb-4 mt-10 text-center text-xl sm:text-xl md:text-2xl lg:text-3xl">
         <p class="text-slate-400 mt-4 text-center text-base sm:text-lg">
-         {{drone.ProductDescription}}         
+          {{drone.ProductDescription}}
         </p>
       </div>
 
-      <h1 class="font-semibold text-2xl leading-normal mb-4 mt-10 text-xl sm:text-2xl md:text-3xl">Технічні характеристики</h1>
+      <h1 class="font-semibold text-2xl leading-normal mb-4 mt-10 text-xl sm:text-2xl md:text-3xl">Технічні
+        характеристики</h1>
       <table class="mt-4 w-full max-w-lg text-center table-auto">
         <tr *ngFor="let attr of drone.Attributes | keyvalue:originalOrder">
           <th class="p-2 text-slate-400 text-sm md:text-base">{{attr.key}}</th>
@@ -45,10 +49,12 @@
       <div class="font-semibold leading-normal mb-4 mt-20 text-center">
         <p class="text-slate-400 mt-4 text-left sm:text-lg">
           {{drone.CompanyProfile}} <br>
-          {{drone.CompanyProfileName}} 
         </p>
         <p class="text-slate-400 mt-4 text-left sm:text-lg">
-          {{drone.CompanyProfileText}}  
+          {{drone.CompanyProfileName}} <br>
+        </p>
+        <p class="text-slate-400 mt-4 text-left sm:text-lg">
+          {{drone.CompanyProfileText}}
         </p>
       </div>
     </div>
