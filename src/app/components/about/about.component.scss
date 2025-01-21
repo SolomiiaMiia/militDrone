@@ -31,4 +31,51 @@ p {
   p {
     font-size: 1rem;
   }
+  #about{
+    padding: 0px !important;
+  }
+}
+
+
+/* Списки */
+.list-disc {
+  padding-left: 1rem; /* Відступ для списків */
+}
+
+.list-inside {
+  margin-left: 0; /* Вирівнювання всередині контейнера */
+}
+
+.space-y-4 > :not(:last-child) {
+  margin-bottom: 1rem; /* Відступи між пунктами */
+}
+
+/* Текст */
+.text-slate-400 {
+  color: #94a3b8; /* Нейтральний відтінок для тексту */
+}
+
+.text-lg {
+  font-size: 1.125rem; /* Великий розмір тексту */
+}
+
+.leading-relaxed {
+  line-height: 1.75; /* Комфортний міжрядковий інтервал */
+}
+
+/* Кнопка */
+a.inline-flex {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #14b8a6; /* Тілова кнопка */
+  color: #fff;
+  padding: 0.625rem 1.5rem; /* Відступи */
+  border-radius: 0.375rem; /* Закруглені краї */
+  font-weight: 500;
+  transition: background-color 0.3s ease-in-out;
+}
+
+a.inline-flex:hover {
+  background-color: #0d9488; /* Темніший відтінок при наведенні */
 }

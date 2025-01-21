@@ -7,24 +7,11 @@
 
       <div class="card bg-transparent w-full max-w-md md:max-w-lg lg:max-w-xl">
         <div id="carouselExampleIndicators" class="carousel slide">
-          <!-- <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div> -->
           <div class="carousel-inner">
             <div [ngClass]="{ 'active': i==0 }" class="carousel-item" *ngFor="let image of drone.ImgDrones; index as i">
               <img src="../../../assets/images/drone/{{image}}" class="d-block w-100" alt="...">
             </div>
           </div>
-          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button> -->
         </div>
       </div>
 
@@ -44,19 +31,26 @@
         </tr>
       </table>
 
-      <!-- <a href="#" class="h-10 px-6 mt-10 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white">Додати замовлення <i class="mdi mdi-chevron-right align-middle ms-0.5"></i></a> -->
+      <a href="#"
+        class="h-10 px-6 mt-10 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white hover:bg-teal-600">Зробити
+        замовлення <i class="mdi mdi-chevron-right align-middle ms-0.5"></i></a>
 
-      <div class="font-semibold leading-normal mb-4 mt-20 text-center">
-        <p class="text-slate-400 mt-4 text-left sm:text-lg">
+      <div class="font-semibold leading-normal mb-4 mt-10 text-center">
+        <p class="text-slate-200 mt-4 text-left sm:text-xl">
           {{drone.CompanyProfile}} <br>
         </p>
-        <p class="text-slate-400 mt-4 text-left sm:text-lg">
+        <p class="text-slate-200 mt-4 text-left sm:text-xl">
           {{drone.CompanyProfileName}} <br>
         </p>
-        <p class="text-slate-400 mt-4 text-left sm:text-lg">
+        <p class="text-slate-200 mt-4 text-left sm:text-xl">
           {{drone.CompanyProfileText}}
         </p>
       </div>
+
+      <button onclick="window.history.back()"
+        class="h-10 px-6 mt-6 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-gray-500 text-white hover:bg-gray-600">
+        Назад
+      </button>
     </div>
   </div>
 </section>

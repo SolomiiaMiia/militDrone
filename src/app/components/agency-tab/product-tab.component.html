@@ -1,126 +1,70 @@
-<section class="realtive md:py-24 py-16" id="services2">
+<section class="relative md:py-24 py-16" id="product">
   <div class="container relative">
-    <div class="grid grid-cols-1 pb-6 text-center">
+    <div class="grid grid-cols-1 pb-6 text-center pb">
       <h3 class="font-semibold text-2xl leading-normal mb-4">Наші продукти</h3>
       <!-- <p class="text-slate-400 max-w-xl mx-auto">Система керування на оптоволокні</p> -->
     </div>
 
-    <div class="grid md:grid-cols-12 grid-cols-1 mt-6 gap-6 text-center justify-center">
-      <div class="lg:col-span-4 md:col-span-5">
-        <div class="sticky top-20">
-          <!-- Сітка з однією колонкою -->
-          <ul class="grid grid-cols-1 gap-6 p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md">
-            <li role="presentation">
-              <button
-                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
-                [ngClass]="activeIndex === 1 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
-                (click)="tabClick(1)">
-                <span class="block">Система керування на оптоволокні</span>
-              </button>
-            </li>
-            <li role="presentation">
-              <button
-                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
-                [ngClass]="activeIndex === 2 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
-                (click)="tabClick(2)">
-                <span class="block">FPV дрон 10inc</span>
-                <!-- <span class="text-lg mt-2 block">300M-6GHz</span> -->
-              </button>
-            </li>
-            <li role="presentation">
-              <button
-                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
-                [ngClass]="activeIndex === 3 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
-                (click)="tabClick(3)">
-                <span class="block">FPV дрон 13’ дюймів</span>
-                <!-- <span class="text-lg mt-2 block">4-смуговий засіб 200W GaN 433M-5.8Ghz</span> -->
-              </button>
-            </li>
-            <!-- <li role="presentation">
-              <button
-                class="px-4 py-2 text-start text-base font-medium rounded-md w-full duration-500 hover:text-teal-500 dark:hover:text-white hover:bg-slate-50 dark:hover:bg-slate-800"
-                [ngClass]="activeIndex === 4 ? 'text-white bg-teal-500 hover:text-white dark:hover:text-white hover:bg-teal-500 dark:hover:bg-teal-500' : ''"
-                (click)="tabClick(4)">
-                <span class="block">Цифровий модуляційний підсилювач</span>
-                <span class="text-lg mt-2 block">100W Anti FPV 700-1000Mhz LDMOS</span>
-              </button>
-            </li> -->
-            
-          </ul>
+    <div class="grid md:grid-cols-2 grid-cols-1 gap-6 mt-6 max-w-4xl mx-auto">
+      <!-- Продукти відображаються по два в рядок на великих екранах -->
+      <div class="p-6 bg-white dark:bg-slate-900 shadow rounded-md flex flex-col justify-between">
+        <div class="img-container">
+          <img src="assets/images/drone/IMG_6498.png" class="responsive-img" alt="Система керування на оптоволокні">
+        </div>
+        <div class="mt-6">
+          <p class="text-slate-400 mt-4">Система керування на оптоволокні</p>
+          <br>
+          Довжина 10 км: 17 420 UAH <br>
+          Довжина 15 км: 21 980 UAH
+        </div>
+        <!-- Кнопка "Більше" завжди внизу -->
+        <div class="mt-4">
+          <a href="/more-info/sustema_keryvanna" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
         </div>
       </div>
 
+      <div class="p-6 bg-white dark:bg-slate-900 shadow rounded-md flex flex-col justify-between">
+        <div class="img-container">
+          <img src="assets/images/drone/IMG_6500.png" class="responsive-img" alt="Десятидюймовий дрон">
+        </div>
+        <div class="mt-6">
+          <p class="text-slate-400 mt-4">Десятидюймовий дрон створений для системи керування на 10 км</p>
+          Ціна: 16 000 UAH
+        </div>
+        <!-- Кнопка "Більше" завжди внизу -->
+        <div class="mt-4">
+          <a href="/more-info/fpv_dron_10" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
+        </div>
+      </div>
 
-      <div class="lg:col-span-7 md:col-span-5">
-        <div id="myTabContent" class="p-6 bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-md"
-          style="text-align: left;">
-          <div [ngClass]="activeIndex === 1 ? '' : 'hidden'">
-            <img src="assets/images/drone/IMG_6498.png" class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-            <div class="mt-6">
-              <!-- <h5 class="text-lg font-medium">SEO Audit</h5> -->
-              <p class="text-slate-400 mt-4">
-                Система керування на оптоволокні </p>
-              <br>
-              Наземна станція: <br>
-              4170 UAH <br>
-              Довжина 10 км: 17 420 UAH <br>
-              Довжина 15 км:
-              21 980 UAH
-              <div class="mt-4">
-                <a href="/more-info/detector_bpla" class="text-teal-500">Більше <i
-                    class="mdi mdi-chevron-right align-middle"></i></a>
-              </div>
-            </div>
-          </div>
-          <div [ngClass]="activeIndex === 2 ? '' : 'hidden'">
-            <img src="assets/images/drone/IMG_6500.png" class="shadow dark:shadow-gray-700 rounded-md img-h"
-              alt="">
-            <div class="mt-6">
-              <p class="text-slate-400 mt-4">
-                Десятидюймовий дрон створений для системи керування на 10 км
-                <br>
-              </p>
-              Ціна:
-              16 000 UAH
-              <div class="mt-4">
-                <a href="/more-info/antena" class="text-teal-500">Більше <i
-                    class="mdi mdi-chevron-right align-middle"></i></a>
-              </div>
-            </div>
-          </div>
-          <div [ngClass]="activeIndex === 3 ? '' : 'hidden'">
-            <img src="assets/images/drone/IMG_6502.png" class="shadow dark:shadow-gray-700 rounded-md img-h"
-              alt="">
-            <div class="mt-6">
-              <p class="text-slate-400 mt-4">13-тидюймовий дрон створений для системи керування на 15 км
-                <br>
-              </p>
-              Ціна: 31 900 UAH
-              <div class="mt-4">
-                <a href="/more-info/sustema_protudii_bpla" class="text-teal-500">Більше <i
-                    class="mdi mdi-chevron-right align-middle"></i></a>
-              </div>
-            </div>
-          </div>
-          <!-- <div [ngClass]="activeIndex === 4 ? '' : 'hidden'">
-            <img src="assets/images/drone/100WDigitalmodulation.png"
-              class="shadow dark:shadow-gray-700 rounded-md img-h" alt="">
-            <div class="mt-6">
-              <p class="text-slate-400 mt-4">100W Anti FPV 700-1000Mhz LDMOS Цифровий модуляційний підсилювач потужності
-                Lora модуль <br>
-                Артикул: 00411 <br>
-                Підтримка індивідуального діапазону частот та потужності</p>
-              <div class="mt-4">
-                <a href="/more-info/pidsulyvash_potyshnosti100W" class="text-teal-500">Більше <i
-                    class="mdi mdi-chevron-right align-middle"></i></a>
-              </div>
-            </div>
-          </div> -->
+      <div class="p-6 bg-white dark:bg-slate-900 shadow rounded-md flex flex-col justify-between">
+        <div class="img-container">
+          <img src="assets/images/drone/IMG_6502.png" class="responsive-img" alt="13-тидюймовий дрон">
+        </div>
+        <div class="mt-6">
+          <p class="text-slate-400 mt-4">13-тидюймовий дрон створений для системи керування на 15 км</p>
+          Ціна: 31 900 UAH
+        </div>
+        <!-- Кнопка "Більше" завжди внизу -->
+        <div class="mt-4">
+          <a href="/more-info/fpv_dron_13" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
+        </div>
+      </div>
 
+      <div class="p-6 bg-white dark:bg-slate-900 shadow rounded-md flex flex-col justify-between">
+        <div class="img-container">
+          <img src="assets/images/drone/100WDigitalmodulation.png" class="responsive-img" alt="Наземна станція">
+        </div>
+        <div class="mt-6">
+          <p class="text-slate-400 mt-4">Наземна станція</p>
+          <span>Ціна: 4170 UAH</span>
+        </div>
+        <!-- Кнопка "Більше" завжди внизу -->
+        <div class="mt-4">
+          <a href="/more-info/nazemna_stancia" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
         </div>
       </div>
     </div>
-    <!--end grid-->
   </div>
   <!--end container-->
 </section>

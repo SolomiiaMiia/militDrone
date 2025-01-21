@@ -6,3 +6,30 @@
         height: 430px !important;
     }
 }
+
+@media screen and  (max-width: 768px) {
+
+    #services{
+        // padding: 20px !important;
+    }
+    .pb{
+        padding-bottom: 0 !important;
+    }
+    .group {
+        height: auto !important; /* Дозволяємо автоматичну висоту */
+        padding: 10px;
+    }
+
+    .group .flex {
+        width: 30px;
+        height: 30px;
+    }
+
+    .group .content .title {
+        font-size: 14px; /* Зменшуємо шрифт */
+    }
+
+    .group .content p {
+        font-size: 12px; /* Зменшуємо текст опису */
+    }
+}
