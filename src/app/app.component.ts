@@ -7,6 +7,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { NavLightComponent } from "./components/nav-light/nav-light.component";
 
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

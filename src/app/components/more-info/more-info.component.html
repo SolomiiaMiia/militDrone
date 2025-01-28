@@ -5,7 +5,7 @@
         class="font-semibold text-4xl leading-normal mb-8 text-slate-400 mt-4 text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">
         {{drone.DroneName}}</h1>
 
-      <div class="card bg-transparent w-full max-w-md md:max-w-lg lg:max-w-xl">
+      <div class="card bg-transparent w-full max-w-md md:max-w-lg lg:max-w-l">
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-inner">
             <div [ngClass]="{ 'active': i==0 }" class="carousel-item" *ngFor="let image of drone.ImgDrones; index as i">

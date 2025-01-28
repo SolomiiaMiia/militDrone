@@ -1,7 +1,7 @@
 {
   "name": "upcover",
   "version": "1.1.0",
-  "description": "Angular 18 Business Landing Page Template",
+  "description": "Milit Drone",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -29,13 +29,13 @@
     "angular-feather": "^6.5.1",
     "bootstrap": "^5.3.3",
     "ngx-countup": "^13.2.0",
-    "ngx-slickjs": "^1.5.2",
+    "ngx-owl-carousel-o": "^18.0.0",
     "rxjs": "~7.8.0",
     "sass": "^1.77.8",
-    "swiper": "^11.1.6",
+    "swiper": "^11.2.1",
     "tiny-slider": "^2.9.4",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.10"
+    "zone.js": "^0.14.10"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^18.2.0",
