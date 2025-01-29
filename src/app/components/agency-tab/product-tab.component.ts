@@ -18,16 +18,41 @@ export class ProductTabComponent {
   activeIndex:number = 1
   slidesStore:Slide[] =[{
     Id:'0',
-    Src:'assets/images/drone/IMG_6500.png'
+    Src:'assets/images/drone/A74.jpg'
   },
   {
     Id:'1',
-    Src:'assets/images/drone/IMG_6500.png'
+    Src:'assets/images/drone/A75.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/IMG_6500.png'
-  }];
+    Src:'assets/images/drone/A76.jpg'
+  },
+  {
+    Id:'2',
+    Src:'assets/images/drone/A77.jpg'
+  },
+  {
+    Id:'2',
+    Src:'assets/images/drone/A78.jpg'
+  },
+  {
+    Id:'2',
+    Src:'assets/images/drone/A79.jpg'
+  },
+  {
+    Id:'2',
+    Src:'assets/images/drone/A710.jpg'
+  },
+  {
+    Id:'2',
+    Src:'assets/images/drone/A711.jpg'
+  },
+  {
+    Id:'2',
+    Src:'assets/images/drone/A712.jpg'
+  },
+];
 
   customOptions: OwlOptions = {
     loop: true,
@@ -49,7 +74,7 @@ export class ProductTabComponent {
         items: 3
       },
       940: {
-        items: 2
+        items: 3
       }
     },
     nav: true

@@ -41,3 +41,13 @@
   height: 100%; 
   object-fit: contain; 
 }
+
+.slide-container {
+  padding: 15px 10px; /* Відступи зліва та справа */
+}
+
+.carousel-image {
+  width: 100%;
+  border-radius: 10px; /* Закруглення кутів (необов’язково) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для об'ємності */
+}

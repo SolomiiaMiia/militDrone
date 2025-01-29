@@ -34,21 +34,40 @@
           <a href="/more-info/fpv_dron_10" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
         </div>
       </div>
+    <div class="p-6 bg-white dark:bg-slate-900 shadow rounded-md flex flex-col justify-between">
+      <div class="img-container">
+        <img src="assets/images/drone/IMG_6502.png" class="responsive-img" alt="13-тидюймовий дрон">
+      </div>
+      <div class="mt-6">
+        <p class="text-slate-400 mt-4">13-тидюймовий дрон створений для системи керування на 15 км</p>
+        Ціна: 35 000 UAH
+      </div>
+      <div class="mt-4">
+        <a href="/more-info/fpv_dron_13" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
+      </div>
     </div>
 
-  
-    <owl-carousel-o [options]="customOptions">
-  
-      <ng-container *ngFor="let slide of slidesStore">
-        <ng-template carouselSlide [id]="slide.Id">
-          <img [src]="slide.Src">
-        </ng-template>
-      </ng-container>
-  
-    </owl-carousel-o>
-    
-    
-
-
+    <div class="p-6 bg-white dark:bg-slate-900 shadow rounded-md flex flex-col justify-between">
+      <div class="img-container">
+        <img src="assets/images/drone/A73.jpg" class="responsive-img" alt="Наземна станція">
+      </div>
+      <div class="mt-6">
+        <p class="text-slate-400 mt-4">Наземна станція</p>
+        <span>Ціна: 4600 UAH</span>
+      </div>
+      <div class="mt-4">
+        <a href="/more-info/nazemna_stancia" class="text-teal-500 inline-block">Більше <i class="mdi mdi-chevron-right align-middle"></i></a>
+      </div>
+    </div>
+  </div>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let slide of slidesStore">
+      <ng-template carouselSlide [id]="slide.Id">
+        <div class="slide-container">
+          <img [src]="slide.Src" class="carousel-image">
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
   </div>
 </section>
