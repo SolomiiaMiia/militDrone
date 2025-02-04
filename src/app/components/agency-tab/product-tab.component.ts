@@ -18,39 +18,39 @@ export class ProductTabComponent {
   activeIndex:number = 1
   slidesStore:Slide[] =[{
     Id:'0',
-    Src:'assets/images/drone/A74.jpg'
+    Src:'assets/images/drone/A74-min.jpg'
   },
   {
     Id:'1',
-    Src:'assets/images/drone/A75.jpg'
+    Src:'assets/images/drone/A75-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A76.jpg'
+    Src:'assets/images/drone/A76-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A77.jpg'
+    Src:'assets/images/drone/A77-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A78.jpg'
+    Src:'assets/images/drone/A78-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A79.jpg'
+    Src:'assets/images/drone/A79-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A710.jpg'
+    Src:'assets/images/drone/A710-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A711.jpg'
+    Src:'assets/images/drone/A711-min.jpg'
   },
   {
     Id:'2',
-    Src:'assets/images/drone/A712.jpg'
+    Src:'assets/images/drone/A712-min.jpg'
   },
 ];
 

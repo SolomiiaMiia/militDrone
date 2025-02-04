@@ -39,7 +39,7 @@ export class ServicesComponent implements
     {
       icon: 'monitor',
       title: 'Сучасні компоненти',
-      desc: '3 інтеграції з inav, beta flight, adrdupilot'
+      desc: '3 інтеграції з inav, beta flight, ardupilot'
     },
   ]
 
