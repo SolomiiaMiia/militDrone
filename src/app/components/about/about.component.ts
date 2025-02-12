@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ChangeDetectorRef } from '@angular/core';
 import { CountUpModule } from 'ngx-countup';
 
 @Component({
@@ -10,5 +10,9 @@ import { CountUpModule } from 'ngx-countup';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+  constructor(private cdr: ChangeDetectorRef) {}
+  ngAfterViewInit() {
+    this.cdr.detectChanges();
+  }
 
 }
