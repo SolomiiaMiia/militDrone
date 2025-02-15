@@ -1,45 +1,56 @@
 <app-nav-light/>
 <section class="relative flex items-center w-full py-36 lg:h-screen bg-[url('/assets/images/drone/A72.jpg')] bg-center bg-no-repeat bg-cover" id="home">
     <div class="container relative">
-        <div class="grid lg:grid-cols-12 md:grid-cols-2 mt-10 items-center gap-[30px] mr">
+        <div class="grid lg:grid-cols-12 md:grid-cols-2 mt-10 items-center gap-[30px]">
             <div class="lg:col-span-7">
-                <!-- <img src="assets/images/militdrone.svg" style="height: 200px;"> -->
-                <h4 class="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl  text-white mb-5">Міліт Дрон </h4>
+                <!-- Заголовок і опис -->
+                <h4 class="font-semibold lg:leading-normal leading-normal tracking-wide text-4xl lg:text-5xl text-white mb-5">Міліт Дрон</h4>
                 <p class="text-white text-lg max-w-xl shadow-lg shadow-black/50 p-3">
                     Це провідний виробник систем керування на оптоволокні на дальність 10 та 15 кілометрів.
-                  </p>
-                  
+                </p>
+
+                <!-- Кнопка -->
                 <div class="relative mt-6">
-                    <a href="#product" class=" tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white hover:bg-teal-600 ">Спробувати наші технології</a>
+                    <a href="#product" class="tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white hover:bg-teal-600">
+                        Спробувати наші технології
+                    </a>
+                </div>
+
+                <!-- Номер телефону -->
+                <div class="mt-6">
+                    <p class="text-white text-lg font-semibold">Зателефонуйте нам: 
+                        <a href="tel:+380992831292" class="text-teal-400 hover:underline">099 283 12 92</a>
+                    </p>
                 </div>
             </div>
-            <div class="lg:col-span-5 pad">
+
+            <!-- Форма -->
+            <div class="lg:col-span-5">
                 <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-800 md:p-8 p-6 lg:ms-10 z-10 relative">
                     <h4 class="mb-5 text-2xl font-semibold text-center">Отримати безкоштовну консультацію</h4>
 
                     <form>
-                        <div class="grid grid-cols-1 gap-4 ">
-                            <div class="">
+                        <div class="grid grid-cols-1 gap-4">
+                            <div>
                                 <label class="form-label font-medium">Ваше Ім'я:</label>
                                 <input type="text" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Ім'я" name="name" required>
                             </div>
-                            <div class="">
+                            <div>
                                 <label class="form-label font-medium">Ваш номер телефону:</label>
                                 <input name="number" id="phNumber" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="+38 068 33 333 33" required>
                             </div>
-                            
                             <div>
-                                <button type="submit" class="inline-flex hover:bg-teal-600  tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white w-full">Відправити</button>
+                                <button type="submit" class="inline-flex hover:bg-teal-600 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white w-full">
+                                    Відправити
+                                </button>
                             </div>
-                        </div><!--end grid-->
+                        </div>
                     </form>
-                    <!-- end form -->
                 </div>
             </div>
         </div>
-    </div><!--end container-->
+    </div>
 </section>
-
 <app-about/>
 <app-product-tab/>
 <app-services/>
