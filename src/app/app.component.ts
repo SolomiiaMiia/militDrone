@@ -11,7 +11,7 @@ import { NavLightComponent } from "./components/nav-light/nav-light.component";
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, FooterComponent, SwitcherComponent, NavbarComponent, NavLightComponent],
+  imports: [CommonModule, RouterOutlet, FooterComponent, SwitcherComponent, NavbarComponent, NavLightComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

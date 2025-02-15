@@ -29,15 +29,15 @@
                 <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-800 md:p-8 p-6 lg:ms-10 z-10 relative">
                     <h4 class="mb-5 text-2xl font-semibold text-center">Отримати безкоштовну консультацію</h4>
 
-                    <form>
+                    <form (submit)="sendEmail($event)">
                         <div class="grid grid-cols-1 gap-4">
                             <div>
                                 <label class="form-label font-medium">Ваше Ім'я:</label>
-                                <input type="text" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Ім'я" name="name" required>
+                                <input type="text" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="Ім'я" id="name"  name="name" required>
                             </div>
                             <div>
                                 <label class="form-label font-medium">Ваш номер телефону:</label>
-                                <input name="number" id="phNumber" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="+38 068 33 333 33" required>
+                                <input name="number" id="number" class="mt-2 w-full py-2 px-3 h-10 bg-transparent dark:bg-slate-900 dark:text-slate-200 rounded outline-none border border-gray-100 dark:border-gray-800 focus:ring-0" placeholder="+38 068 33 333 33" required>
                             </div>
                             <div>
                                 <button type="submit" class="inline-flex hover:bg-teal-600 tracking-wide inline-flex items-center justify-center font-medium rounded-md bg-teal-500 text-white w-full">

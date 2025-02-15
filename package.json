@@ -24,6 +24,7 @@
     "@coreui/angular": "~5.2.13",
     "@coreui/coreui": "^5.1.0",
     "@coreui/icons-angular": "~5.2.11",
+    "@emailjs/browser": "^4.4.1",
     "@ng-bootstrap/ng-bootstrap": "^17.0.0",
     "@popperjs/core": "~2.11.8",
     "angular-feather": "^6.5.1",
