@@ -39,16 +39,5 @@ console.log( event.target as HTMLFormElement)
           alert('Помилка відправлення повідомлення!');
         },
       );
-
-
-    // Замініть значення service_id, template_id, user_id на ваші значення
-    // emailjs.sendForm('service_mygmail', 'template_qpha6wx', event.target as HTMLFormElement, 'your_user_id')
-    //   .then((result: EmailJSResponseStatus) => {
-    //     console.log('Email sent successfully:', result.text);
-    //     alert('Ваше повідомлення було надіслано!');
-    //   }, (error) => {
-    //     console.error('Email sending failed:', error.text);
-    //     alert('Помилка відправлення повідомлення!');
-    //   });
   }
 }
