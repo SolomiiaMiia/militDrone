@@ -30,12 +30,20 @@
       <!-- Відео -->
       <div class="md:col-span-6 video-block">
         <div class="relative w-full overflow-hidden rounded-lg aspect-w-16 aspect-h-9">
-          <video class="w-full h-full object-cover rounded-lg shadow-lg" controls preload="auto">
-            <source src="assets/video/Дрон.mov" type="video/mp4">
+          <video
+            #videoPlayer
+            class="w-full h-full object-cover rounded-lg shadow-lg"
+            controls
+            autoplay
+            muted
+            preload="auto"
+          >
+            <source src="assets/video/Дрон.mov" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
       </div>
+      
     </div>
   </div>
 </section>

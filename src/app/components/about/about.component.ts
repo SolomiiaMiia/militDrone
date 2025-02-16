@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ChangeDetectorRef } from '@angular/core';
+import { Component, ChangeDetectorRef, OnInit, ViewChild, ElementRef  } from '@angular/core';
 import { CountUpModule } from 'ngx-countup';
 
 @Component({
@@ -10,9 +10,13 @@ import { CountUpModule } from 'ngx-countup';
   styleUrl: './about.component.scss'
 })
 export class AboutComponent {
+  @ViewChild('videoPlayer', { static: false }) videoPlayer!: ElementRef<HTMLVideoElement>;
+
   constructor(private cdr: ChangeDetectorRef) {}
+  
   ngAfterViewInit() {
     this.cdr.detectChanges();
+    this.videoPlayer.nativeElement.play();
   }
 
 }
