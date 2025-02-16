@@ -25,7 +25,7 @@
                 <div class="bg-white dark:bg-slate-900 rounded-xl shadow dark:shadow-gray-800 md:p-8 p-6 lg:ms-10 z-10 relative">
                     <h4 class="mb-5 text-2xl font-semibold text-center">Отримати безкоштовну консультацію</h4>
 
-                    <form>
+                    <form (submit)="sendEmail($event)">
                         <div class="grid grid-cols-1 gap-4 ">
                             <div class="">
                                 <label class="form-label font-medium">Ваше Ім'я:</label>

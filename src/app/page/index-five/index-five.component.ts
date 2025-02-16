@@ -26,8 +26,8 @@ export class IndexFiveComponent {
 
 console.log( event.target as HTMLFormElement)
     emailjs
-      .sendForm('service_mygmail', 'template_qpha6wx', event.target as HTMLFormElement, {
-        publicKey: 'zsp73JsnjdQ2hE-lm',
+      .sendForm('service_h7w7lwg', 'template_osvtb1n', event.target as HTMLFormElement, {
+        publicKey: 'H8HfhrQ7I7g_hqm6q',
       })
       .then(
         () => {
