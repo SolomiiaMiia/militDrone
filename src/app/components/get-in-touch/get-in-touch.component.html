@@ -21,7 +21,7 @@
             <div class="lg:col-span-5 md:col-span-6">
                 <div class="lg:ms-5">
                     <div class="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-600 p-6">
-                        <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                        <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()" (submit)="sendEmail($event)">
                             <p class="mb-0" id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div class="grid grid-cols-1 gap-4">
