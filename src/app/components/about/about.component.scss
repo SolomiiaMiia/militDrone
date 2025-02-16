@@ -34,6 +34,18 @@ p {
   #about{
     padding: 20px !important;
   }
+
+  .grid {
+    flex-direction: row;
+  }
+
+  .text-block {
+    order: 1;
+  }
+
+  .video-block {
+    order: 1;
+  }
 }
 
 
@@ -79,3 +91,33 @@ a.inline-flex {
 a.inline-flex:hover {
   background-color: #0d9488; /* Темніший відтінок при наведенні */
 }
+
+
+.grid {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Порядок блоків на мобільних */
+.text-block {
+  order: 1;
+}
+
+.video-block {
+  order: 2;
+}
+
+// /* Порядок блоків на більших екранах */
+// @media (min-width: 768px) {
+//   .grid {
+//     flex-direction: row;
+//   }
+
+//   .text-block {
+//     order: 1;
+//   }
+
+//   .video-block {
+//     order: 1;
+//   }
+// }
